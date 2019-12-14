@@ -33,8 +33,8 @@ namespace ObjectDetection
             assetsPath = GetAbsolutePath(assetsRelativePath);
             modelFilePath = Path.Combine(assetsPath, "Model", "TinyYolo2_model.onnx");
 
-            Mat image = new Mat();
-            _capture.Read(image);
+            //Mat image = new Mat();
+            //_capture.Read(image);
             //Console.WriteLine($"image size (height; width) = ({image.Height}; {image.Width})");
         }
 
@@ -179,8 +179,9 @@ namespace ObjectDetection
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            _capture.Release();
         }
     }
 }
