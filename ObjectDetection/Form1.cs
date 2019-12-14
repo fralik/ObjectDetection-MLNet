@@ -19,7 +19,7 @@ namespace ObjectDetection
         private bool _isRunning;
         private Image _mySharpImage;
 
-        private string assetsRelativePath = @"../../../assets";
+        private string assetsRelativePath = @"assets";
         private string assetsPath;
         private string modelFilePath;
 

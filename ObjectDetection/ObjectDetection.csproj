@@ -9,6 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="assets\Model\TinyYolo2_model.onnx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="assets\Model\TinyYolo2_model.onnx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.ML" Version="1.4.0" />
     <PackageReference Include="Microsoft.ML.ImageAnalytics" Version="1.4.0" />
     <PackageReference Include="Microsoft.ML.OnnxTransformer" Version="1.4.0" />

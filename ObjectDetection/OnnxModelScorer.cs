@@ -4,7 +4,6 @@ using System.Drawing;
 using System.Linq;
 using Microsoft.ML;
 using Microsoft.ML.Data;
-using Microsoft.ML.Transforms.Image;
 using ObjectDetection.DataStructures;
 using ObjectDetection.YoloParser;
 
