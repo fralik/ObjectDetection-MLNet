@@ -14,23 +14,9 @@ For a detailed explanation of how to build original Object Detection application
 
 Make sure that [Git LSF](https://git-lfs.github.com/) is installed on your system **before you clone** this repository.
 
-Apart from obvious .NET Core >= 3.1 and ML.NET library this application depends on [OpenCvSharp4](https://github.com/shimat/opencvsharp)
-and [OpenCV](https://opencv.org/) libraries.
+Apart from obvious .NET Core >= 3.1 and ML.NET library this application depends on [OpenCvSharp4](https://github.com/shimat/opencvsharp) library.
 
 OpenCvSharp4 will be installed automatically as NuGet package.
-
-You will need to install OpenCV binaries manually. If you are using Windows, then you can download pre-built binaries. If you are
-on macOS or Linux, then you will need to build OpenCV yourself. Refer to one of the tutorials out there on how to build OpenCV,
-one example for macOS is here https://www.pyimagesearch.com/2018/08/17/install-opencv-4-on-macos/.
-
-Once you have OpenCV binaries you have to put them alongside ObjectDetection executable. 
-In Windows with pre-built binaries you can do it like this:
-
-1. Extract downloaded arcive.
-
-2. Copy all files from `opencv/build/x64/vc15/bin` to the deepest folder under `bin` folder in Object Detection project, i.e. `ObjectDetection\ObjectDetection\bin\Debug\netcoreapp3.1`.
-
-These instructions were used with ML.NET 1.4, Visual Studio 2019, and OpenCV 4.1.2.
 
 ## Problem 
 Object detection is one of the classical problems in computer vision: Recognize what the objects are inside a given image and also where they are in the image. For these cases, you can either use pre-trained models or train your own model to classify images specific to your custom domain. 
