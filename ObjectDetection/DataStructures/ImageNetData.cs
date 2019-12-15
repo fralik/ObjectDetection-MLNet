@@ -5,7 +5,7 @@ namespace ObjectDetection.DataStructures
 {
     public class ImageNetData
     {
-        // Dimensions provided here seems not to play an important role
+        // Dimensions provided here seem not to play an important role
         [ImageType(480, 640)]
         public Bitmap InputImage { get; set; }
 
